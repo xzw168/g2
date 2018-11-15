@@ -65,8 +65,9 @@ Motate::SPI<kSocket4_SPISlaveSelectPinNumber> spi;
 
 //******** UART ********
 #if XIO_HAS_UART
-Motate::UART<Motate::kSerial_RXPinNumber, Motate::kSerial_TXPinNumber, Motate::kSerial_RTSPinNumber, Motate::kSerial_CTSPinNumber> Serial{
-    115200, Motate::UARTMode::RTSCTSFlowControl};
+Motate::UART<Motate::kSerial_RXPinNumber, Motate::kSerial_TXPinNumber> Serial{
+    115200, Motate::UARTMode::XonXoffFlowControl};//RTSCTSFlowControl
+
 #endif
 
 void board_hardware_init(void)  // called 1st

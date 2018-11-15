@@ -61,7 +61,7 @@
 #define ADC3_AVAILABLE 0
 
 #define XIO_HAS_USB 1
-#define XIO_HAS_UART 0
+#define XIO_HAS_UART 1
 #define XIO_HAS_SPI 0
 #define XIO_HAS_I2C 0
 
@@ -92,13 +92,13 @@ namespace Motate {
 
 pin_number kSerial_RXPinNumber = 0;
 pin_number kSerial_TXPinNumber = 1;
-//    pin_number kSerial_RTSPinNumber                      =  8;   // added later
-//    pin_number kSerial_CTSPinNumber                      =  9;   // added later
+pin_number kSerial_RTSPinNumber                      =  8;   // added later
+pin_number kSerial_CTSPinNumber                      =  9;   // added later
 
 pin_number kSerial0_RX = 0;
 pin_number kSerial0_TX = 1;
-//    pin_number kSerial0_RTS                     =  8;   // added later
-//    pin_number kSerial0_CTS                     =  9;   // added later
+//pin_number kSerial0_RTS                     =  8;   // added later
+//pin_number kSerial0_CTS                     =  9;   // added later
 
 pin_number kI2C_SDAPinNumber = 20;
 pin_number kI2C_SCLPinNumber = 21;

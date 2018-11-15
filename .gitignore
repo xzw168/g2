@@ -46,6 +46,7 @@ TcfTransactionLog.csv
 *.xccheckout
 .gdb_history
 JLink.log
+jlink.config
 Tools/gcc-arm-none-eabi*
 openocd.cfg
 openocd.log
